@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Agência especializada em viagens para Bariloche. Pacotes personalizados, atendimento em português e experiências únicas na Patagônia Argentina.">
+        <meta name="keywords" content="Bariloche, viagem Argentina, pacotes Bariloche, turismo Patagônia, roteiros personalizados">
+        <meta name="author" content="Brasil em Bariloche">
+        <title>Brasil em Bariloche - Sua Viagem dos Sonhos na Argentina</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+            .hero-banner {
+                background-image: url('https://images.unsplash.com/photo-1529414988992-52e2db9372b2?q=80&w=1928&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+                background-size: cover;
+                background-position: center;
+                position: relative;
+                padding: 8rem 0; /* Ajusta el padding según sea necesario */
+            }
+            .destino-card {
+                height: 100%; /* Asegura que todas las tarjetas tengan la misma altura */
+                display: flex;
+                flex-direction: column;
+            }
+            .destino-card .content {
+                flex-grow: 1; /* Hace que el contenido ocupe el espacio restante */
+            }
+        </style>
+    </head>
+    <body>
+        <!-- Barra de Navegación -->
+        <nav class="bg-blue-600 text-white">
+            <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+                <div class="text-2xl font-bold">Brasil em Bariloche</div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#inicio" class="hover:text-blue-200">Início</a>
+                    <a href="#pacotes" class="hover:text-blue-200">Pacotes</a>
+                    <a href="#contato" class="hover:text-blue-200">Contato</a>
+                    <a href="#sobre" class="hover:text-blue-200">Sobre</a>
+                </div>
+                <a href="#contato" class="bg-white text-blue-600 px-6 py-2 rounded-full font-bold hover:bg-blue-100">
+                    Fale Conosco
+                </a>
+            </div>
+        </nav>
+
+        <!-- Sección Principal con Imagen de Fondo -->
+        <header class="hero-banner">
+            <div class="container mx-auto px-4 flex items-center">
+                <!-- Texto a la izquierda -->
+                <div class="text-white w-1/2">
+                    <h1 class="text-5xl font-bold mb-6">Descubra Bariloche</h1>
+                    <p class="text-xl mb-8 text-gray-300">A melhor experiência na Patagônia Argentina com atendimento em português</p>
+                    <div class="flex gap-4">
+                        <a href="#pacotes" class="bg-blue-600 text-white px-8 py-3 rounded-lg font-bold hover:bg-blue-700">
+                            Ver Pacotes
+                        </a>
+                        <a href="https://api.whatsapp.com/send?phone=5511988167746" class="bg-white text-blue-600 px-8 py-3 rounded-lg font-bold hover:bg-gray-100">
+                            Contate-nos
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Formulario de contacto a la derecha -->
+                <div class="w-1/2 pl-12">
+                    <div class="bg-white p-8 rounded-lg shadow-lg">
+                        <h2 class="text-2xl font-bold mb-6 text-blue-600">Solicite uma Cotização 100% Grátis!</h2>
+                        <form>
+                            <div class="mb-4">
+                                <label class="block text-gray-700 mb-2">Nome</label>
+                                <input type="text" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" required>
+                            </div>
+                            <div class="mb-4">
+                                <label class="block text-gray-700 mb-2">E-mail</label>
+                                <input type="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" required>
+                            </div>
+                            <div class="mb-4">
+                                <label class="block text-gray-700 mb-2">Telefone</label>
+                                <input type="tel" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" required>
+                            </div>
+                            <div class="mb-4">
+                                <label class="block text-gray-700 mb-2">Destino de Interesse</label>
+                                <select class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" required>
+                                    <option value="" disabled selected>Selecione um destino</option>
+                                    <option value="Cerro Catedral">Cerro Catedral</option>
+                                    <option value="Circuito Chico">Circuito Chico</option>
+                                    <option value="Isla Victoria y el Bosque de Arrayanes">Isla Victoria y el Bosque de Arrayanes</option>
+                                    <option value="Cerro Campanario">Cerro Campanario</option>
+                                    <option value="Colonia Suiza">Colonia Suiza</option>
+                                    <option value="Los Pozones del Manso">Los Pozones del Manso</option>
+                                </select>
+                            </div>
+                            <div class="mb-4">
+                                <label class="block text-gray-700 mb-2">Mensagem</label>
+                                <textarea class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" rows="4" placeholder="Conte-nos sobre sua viagem dos sonhos"></textarea>
+                            </div>
+                            <a href="https://api.whatsapp.com/send?phone=5511988167746" class="w-full bg-blue-600 text-white py-3 rounded-lg font-bold hover:bg-blue-700 text-center block">
+                                Receba sua Cotização Grátis!
+                            </a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Sección de Ventajas -->
+        <section class="py-16 bg-white">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12">Por que escolher-nos?</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="text-center p-6 rounded-lg shadow-lg">
+                        <div class="text-4xl mb-4">🌟</div>
+                        <h3 class="text-xl font-bold mb-2">Atendimento em Português</h3>
+                        <p class="text-gray-600">Equipe brasileira pronta para te atender com todo conforto</p>
+                    </div>
+                    <div class="text-center p-6 rounded-lg shadow-lg">
+                        <div class="text-4xl mb-4">🏔️</div>
+                        <h3 class="text-xl font-bold mb-2">Expertise Local</h3>
+                        <p class="text-gray-600">Conhecemos cada detalhe de Bariloche para sua melhor experiência</p>
+                    </div>
+                    <div class="text-center p-6 rounded-lg shadow-lg">
+                        <div class="text-4xl mb-4">💎</div>
+                        <h3 class="text-xl font-bold mb-2">Pacotes Exclusivos</h3>
+                        <p class="text-gray-600">Roteiros personalizados para cada tipo de viajante</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Destinos -->
+        <section id="pacotes" class="py-16 bg-gray-100">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-12">Nossos Destinos</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Cerro Catedral -->
+                    <div class="bg-white rounded-xl overflow-hidden shadow-lg destino-card">
+                        <img src="https://via.placeholder.com/400x300" alt="Cerro Catedral" class="w-full h-48 object-cover"/>
+                        <div class="p-6 content">
+                            <h3 class="text-2xl font-bold mb-4">Cerro Catedral</h3>
+                            <p class="text-gray-600 mb-4">O maior centro de esqui da América do Sul, com vistas deslumbrantes.</p>
+                            <ul class="mb-6 space-y-2">
+                                <li class="flex items-center">
+                                    <span class="text-green-500 mr-2">✓</span> Esqui e snowboard
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="text-green-500 mr-2">✓</span> Teleféricos panorâmicos
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="text-green-500 mr-2">✓</span> Restaurantes na montanha
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Circuito Chico -->
+                    <div class="bg-white rounded-xl overflow-hidden shadow-lg destino-card">
+                        <img src="https://via.placeholder.com/400x300" alt="Circuito Chico" class="w-full h-48 object-cover"/>
+                        <div class="p-6 content">
+                            <h3 class="text-2xl font-bold mb-4">Circuito Chico</h3>
+                            <p class="text-gray-600 mb-4">Um passeio imperdível pelos lagos e montanhas de Bariloche.</p>
+                            <ul class="mb-6 space-y-2">
+                                <li class="flex items-center">
+                                    <span class="text-green-500 mr-2">✓</span> Vistas panorâmicas
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="text-green-500 mr-2">✓</span> Paradas estratégicas
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="text-green-500 mr-2">✓</span> Natureza exuberante
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Isla Victoria y el Bosque de Arrayanes -->
+                    <div class="bg-white rounded-xl overflow-hidden shadow-lg destino-card">
+                        <img src="https://via.placeholder.com/400x300" alt="Isla Victoria y el Bosque de Arrayanes" class="w-full h-48 object-cover"/>
+                        <div class="p-6 content">
+                            <h3 class="text-2xl font-bold mb-4">Isla Victoria y el Bosque de Arrayanes</h3>
+                            <p class="text-gray-600 mb-4">Um passeio de barco inesquecível pela natureza intocada.</p>
+                            <ul class="mb-6 space-y-2">
+                                <li class="flex items-center">
+                                    <span class="text-green-500 mr-2">✓</span> Trilhas e caminhadas
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="text-green-500 mr-2">✓</span> Bosque único de arrayanes
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="text-green-500 mr-2">✓</span> Paisagens de tirar o fôlego
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Cerro Campanario -->
+                    <div class="bg-white rounded-xl overflow-hidden shadow-lg destino-card">
+                        <img src="https://via.placeholder.com/400x300" alt="Cerro Campanario" class="w-full h-48 object-cover"/>
+                        <div class="p-6 content">
+                            <h3 class="text-2xl font-bold mb-4">Cerro Campanario</h3>
+                            <p class="text-gray-600 mb-4">Uma das vistas mais espetaculares de Bariloche.</p>
+                            <ul class="mb-6 space-y-2">
+                                <li class="flex items-center">
+                                    <span class="text-green-500 mr-2">✓</span> Teleférico ou caminhada
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="text-green-500 mr-2">✓</span> Mirante panorâmico
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="text-green-500 mr-2">✓</span> Café no topo
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Colonia Suiza -->
+                    <div class="bg-white rounded-xl overflow-hidden shadow-lg destino-card">
+                        <img src="https://via.placeholder.com/400x300" alt="Colonia Suiza" class="w-full h-48 object-cover"/>
+                        <div class="p-6 content">
+                            <h3 class="text-2xl font-bold mb-4">Colonia Suiza</h3>
+                            <p class="text-gray-600 mb-4">Um pedaço da Suíça no coração da Patagônia.</p>
+                            <ul class="mb-6 space-y-2">
+                                <li class="flex items-center">
+                                    <span class="text-green-500 mr-2">✓</span> Gastronomia típica
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="text-green-500 mr-2">✓</span> Feira artesanal
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="text-green-500 mr-2">✓</span> História e cultura
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Los Pozones del Manso -->
+                    <div class="bg-white rounded-xl overflow-hidden shadow-lg destino-card">
+                        <img src="https://via.placeholder.com/400x300" alt="Los Pozones del Manso" class="w-full h-48 object-cover"/>
+                        <div class="p-6 content">
+                            <h3 class="text-2xl font-bold mb-4">Los Pozones del Manso</h3>
+                            <p class="text-gray-600 mb-4">Piscinas naturais de águas termais no meio da natureza.</p>
+                            <ul class="mb-6 space-y-2">
+                                <li class="flex items-center">
+                                    <span class="text-green-500 mr-2">✓</span> Águas termais relaxantes
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="text-green-500 mr-2">✓</span> Cachoeiras e paisagens únicas
+                                </li>
+                                <li class="flex items-center">
+                                    <span class="text-green-500 mr-2">✓</span> Experiência de imersão na natureza
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Roteiro Personalizado -->
+                <div class="mt-12 bg-blue-600 text-white p-12 rounded-lg text-center">
+                    <h2 class="text-3xl font-bold mb-6">Não encontrou o que procura?</h2>
+                    <p class="text-xl mb-8">Nós criamos roteiros 100% personalizados para você!</p>
+                    <a href="https://api.whatsapp.com/send?phone=5511988167746" class="bg-white text-blue-600 px-12 py-4 rounded-full font-bold text-lg hover:bg-blue-100">
+                        Receba uma Cotização 100% Grátis!
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Contacto -->
+        <section id="contato" class="py-16 bg-blue-600 text-white">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl font-bold mb-8">Pronto para realizar seu sonho?</h2>
+                <p class="text-xl mb-8">Entre em contato conosco e comece a planejar sua viagem!</p>
+                <div class="flex justify-center gap-4">
+                    <a href="https://api.whatsapp.com/send?phone=5511988167746" class="bg-green-500 px-8 py-3 rounded-lg font-bold hover:bg-green-600">
+                        WhatsApp
+                    </a>
+                    <a href="mailto:contato@brasilembariloche.com.br" class="bg-white text-blue-600 px-8 py-3 rounded-lg font-bold hover:bg-gray-100">
+                        E-mail
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-gray-900 text-white py-12">
+            <div class="container mx-auto px-4">
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Brasil em Bariloche</h3>
+                        <p>Sua agência brasileira especialista em Bariloche</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Contato</h3>
+                        <p>Email: contato@brasilembariloche.com.br</p>
+                        <p>WhatsApp: +55 11 98816-7746</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Redes Sociais</h3>
+                        <div class="flex space-x-4">
+                            <a href="#" class="hover:text-blue-400">Instagram</a>
+                            <a href="#" class="hover:text-blue-400">Facebook</a>
+                            <a href="#" class="hover:text-blue-400">YouTube</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400">
+                    <p>&copy; 2025 Brasil em Bariloche. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+    </html>
