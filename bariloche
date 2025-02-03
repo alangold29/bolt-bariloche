@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bariloche</title>
+    <link rel="stylesheet" href="/styles.css"> <!-- Usa el CSS global si tienes -->
+</head>
+<body>
+    <h1>Bem-vindo a Bariloche</h1>
+    <p>Descubra as melhores experiências em Bariloche.</p>
+    <a href="/">Voltar ao início</a>
+</body>
+</html>
